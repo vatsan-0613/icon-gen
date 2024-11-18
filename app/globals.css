@@ -2,20 +2,56 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+
+@layer utilities {
+  .gradient-text {
+    background: linear-gradient(to bottom, #735000, #FEDA8A);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  .title-gradient{
+    background: linear-gradient(to right, rgb(153, 153, 153), rgb(255, 255, 255), rgb(153, 153, 153));
+    -webkit-background-clip: text;
+    color: transparent;
+  }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+:root {
+  --background: #000000;
+  --foreground: #ffffff;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.radial{
+  background: radial-gradient(circle 400px at top, rgba(94, 176, 239, 0.3), rgba(0, 0, 0, 0) );
+
+}
+
+.button:hover::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  width: 70%;
+  left : 15%;
+  height: 1px;
+  background: linear-gradient(to right, rgb(34, 211, 238, 0), rgb(34, 211, 238, 0.9), rgb(34, 211, 238, 0));
+}
+
+
+nav{
+  background : linear-gradient(to bottom, rgb(0,0,0,1), rgb(51, 51, 51, 0))
+}
+
+.background{
+  opacity: 0.7;
+}
+
+.box{
+  background: linear-gradient(45deg, rgba(27, 30, 35, 0.5), rgba(22, 25, 29, 0.5));
 }
