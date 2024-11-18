@@ -20,9 +20,10 @@ const Steps = () => {
     objectFit='contain'
               alt="trace-line"
               className="absolute"
+              style={{top : "-13%"}}
             />
           <div className="flex flex-col items-center relative">
-            <div className="border-2 p-5 rounded-full">
+            <div className="border-1 p-5 rounded-full bg-black">
             <Image
               src={"/assets/step-1.svg"}
               width={50}
@@ -33,7 +34,7 @@ const Steps = () => {
             <p className="mt-3">Describe</p>
           </div>
           <div className="flex flex-col items-center relative">
-            <div className="border-2 p-5 rounded-full">
+            <div className="border-1 p-5 rounded-full bg-black">
             <Image
               src={"/assets/step-2.svg"}
               width={50}
@@ -45,7 +46,7 @@ const Steps = () => {
             & Style</p>
           </div>
           <div className="flex flex-col items-center relative">
-            <div className="border-2 p-5 rounded-full">
+            <div className="border-1 p-5 rounded-full bg-black">
             <Image
               src={"/assets/step-3.svg"}
               width={50}
@@ -57,7 +58,7 @@ const Steps = () => {
             your icon</p>
           </div>
           <div className="flex flex-col items-center relative">
-            <div className="border-2 p-5 rounded-full">
+            <div className="border-1 p-5 rounded-full bg-black">
             <Image
               src={"/assets/step-4.svg"}
               width={50}
